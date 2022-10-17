@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% block content %}
+
+<!--The iggy.html template uses two filters from humanize:-->
+
+<!--    intcomma converts a number into a string with a comma every three digits.-->
+<!--    intword converts large numbers into their English equivalent.-->
+<h1>Iguanodon</h1>
+<p>
+  Iguanodon (iguana-tooth) were large herbivores. They weighed
+  {{3080|intcomma}}kg ({{6800|intcomma}}lbs).
+  Wow, {{3080000|intword}} grams is a lot!
+</p>
+{% endblock content %}
