@@ -4,14 +4,24 @@ To play around with your own Django template custom tags and filters, you’re g
 If you’ve never set up a Django project before or if you need a refresher, you may want to read Get Started With Django Part 1: Build a Portfolio App first.
 Django is a third-party library, so it should be installed in a virtual environment. If you’re new to virtual environments, check out Python Virtual Environments: A Primer. Create and activate a new virtual environment for yourself and then run the following commands:
 
-```
- $ python -m pip install django==3.2.5
- $ django-admin startproject dinosoar
- $ cd dinosoar
- $ python manage.py startapp dinofacts .
- $ python manage.py migrate
-```
 
+ ```bash 
+ $ python -m pip install django==4.1.2
+ ```
+ 
+ ```bash 
+$ django-admin startproject dinosoar
+ ``` 
+
+```bash 
+$ cd dinosoar
+ ```
+```bash
+$ python manage.py startapp dinofacts .
+```
+```bash
+$ python manage.py migrate
+```
 Setting Up a Django Project
 
 You need to make some changes to your project’s settings to make Django aware of your newly created app and to configure your templates. Edit dinosoar/dinosoar/settings.py and add dinofacts to the INSTALLED_APPS list:
